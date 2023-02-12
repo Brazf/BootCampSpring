@@ -18,4 +18,5 @@ public class Employee {
 	public String toString() {
 		return this.name + ", $" + String.format("%.2f", netSalary());
 	}
+	
 }

@@ -8,24 +8,18 @@ public class Program {
 
 		Scanner scan = new Scanner(System.in);
 		
-		Employee funcionario = new Employee();
+		Student stun = new Student();
 		
-		System.out.println("Digite o nome do funcionário:");
-		funcionario.name = scan.nextLine();
-		System.out.println("Digite o salário bruto do funcionário:");
-		funcionario.grossSalary = scan.nextDouble();
-		System.out.println("Digite o imposto do salário do funcionário:");
-		funcionario.tax = scan.nextDouble();
+		System.out.println("Digite seu nome:");
+		stun.name = scan.nextLine();
+		System.out.println("Nota 1° trimestre");
+		stun.nota1 = scan.nextDouble();
+		System.out.println("Nota 2° trimestre");
+		stun.nota2 = scan.nextDouble();
+		System.out.println("Nota 3° trimestre");
+		stun.nota3 = scan.nextDouble();
 		
-		System.out.println();
-		System.out.println("Funcionário: " + funcionario);
-		System.out.println();
-		
-		System.out.println("Qual a porcentagem para aumentar o salário?");
-		funcionario.increaseSalary(scan.nextDouble());
-		System.out.println("Dados atualizados: " + funcionario.name + ", $" + funcionario.grossSalary);
-		
-		
-		
+		System.out.println(stun);
+
 	}
 }
