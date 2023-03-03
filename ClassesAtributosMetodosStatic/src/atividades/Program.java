@@ -16,5 +16,7 @@ public class Program {
 		CurrencyConverter conve = new CurrencyConverter(valorDolar, ComprasDolar);
 		
 		System.out.println(conve);
+		
+		scan.close();
 	}
 }
