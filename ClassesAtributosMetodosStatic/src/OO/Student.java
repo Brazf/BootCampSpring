@@ -1,4 +1,4 @@
-package atividades;
+package OO;
 
 public class Student {
 	public String name;

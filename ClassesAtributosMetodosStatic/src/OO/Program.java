@@ -1,4 +1,4 @@
-package atividades;
+package OO;
 
 import java.util.Scanner;
 
