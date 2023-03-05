@@ -14,15 +14,17 @@ public class Program {
 			System.out.println("Enter account number:");
 			int number = scan.nextInt();
 			
+			scan.nextLine();
+			
 			// entrada do nome do titular
 			System.out.println("Enter account holder:");
-			String holder = scan.next();
+			String holder = scan.nextLine();
 			
 			// rotina de checagem de deposito inicial
 			System.out.println("Is there na initial deposit (y/n)?");
-			String select = scan.next();
+			String select = scan.nextLine();
 			
-			if(select == "y") {
+			if(select.equalsIgnoreCase("y")) {
 				System.out.print("Enter initial deposit value:");
 				double balance = scan.nextDouble();
 				conta1 = new Account(number, holder, balance);
@@ -34,5 +36,8 @@ public class Program {
 			
 			
 			System.out.println(conta1);
+			
+
+			scan.close();
 	}
 }
