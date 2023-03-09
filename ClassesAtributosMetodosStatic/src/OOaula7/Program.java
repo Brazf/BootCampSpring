@@ -37,7 +37,21 @@ public class Program {
 			
 			System.out.println(conta1);
 			
-
+			System.out.println();
+			System.out.println("Enter a deposit value");
+			double deposit = scan.nextDouble();
+			conta1.deposit(deposit);
+			
+			System.out.println(conta1);
+			
+			System.out.println();
+			
+			System.out.println("Enter a withdraw value:");
+			double withdr = scan.nextDouble();
+			conta1.withdraw(withdr);
+			
+			System.out.println();
+			System.out.println(conta1);
 			scan.close();
 	}
 }
