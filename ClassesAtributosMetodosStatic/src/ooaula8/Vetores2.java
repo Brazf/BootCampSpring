@@ -8,7 +8,7 @@ public class Vetores2 {
 		
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.println("Oi");
+		System.out.println("Quantos Produtos deseja armazenar?");
 		int n = scan.nextInt();
 		
 		double[] valueProducts = new double[n];
